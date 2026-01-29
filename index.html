@@ -419,6 +419,35 @@
             if (visible >= $items.length) {
                 $btn.fadeOut();
             }
+
+            // Prevent hash from appearing in URL
+            $('.nav-link').click(function(e) {
+                e.preventDefault();
+
+                const target = $(this.getAttribute('href'));
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 100
+                    }, 800);
+                }
+
+                // Close mobile menu
+                $('.nav-menu').removeClass('active');
+                $('.hamburger').removeClass('active');
+            });
+
+            // Also handle hero buttons
+            $('.hero-buttons a').click(function(e) {
+                e.preventDefault();
+
+                const target = $(this.getAttribute('href'));
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 100
+                    }, 800);
+                }
+            });
+
         });
     </script>
 </body>
