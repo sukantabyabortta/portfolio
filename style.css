@@ -477,6 +477,20 @@ section {
     font-size: 0.95rem;
 }
 
+.info-item a {
+    display: inline-block;
+    color: #8892b0;
+    transition: all ease-in-out 0.2s;
+    -webkit-transition: all ease-in-out 0.2s;
+    -moz-transition: all ease-in-out 0.2s;
+    -ms-transition: all ease-in-out 0.2s;
+    -o-transition: all ease-in-out 0.2s;
+}
+
+.info-item a:hover {
+    color: #fff;
+}
+
 .info-item i {
     color: #64ffda;
     width: 20px;
@@ -599,7 +613,9 @@ section {
     margin-top: 3rem;
 }
 
+
 /* Sketch Gallery Section */
+
 .sketches {
     background: #1a1a3a;
 }
@@ -669,7 +685,9 @@ section {
     transform: scale(1.2);
 }
 
+
 /* Lightbox Styles */
+
 .lightbox {
     display: none;
     position: fixed;
