@@ -419,6 +419,12 @@
         </div>
     </section>
 
+    <!-- Fixed Resume Download Button -->
+    <a href="#" id="resumeBtn" class="resume-btn">
+        <i class="fa fa-download"></i>
+        <span>Resume</span>
+    </a>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -615,6 +621,15 @@
                     $('.lightbox-next').click();
                 }
             }
+        });
+
+        // ===== RESUME DOWNLOAD BUTTON =====
+        $('#resumeBtn').on('click', function(e) {
+            e.preventDefault();
+            const link = document.createElement('a');
+            link.href = 'resume.pdf';
+            link.download = 'Sukanta_Byabortta_Resume.pdf';
+            link.click();
         });
     </script>
 </body>
