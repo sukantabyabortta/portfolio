@@ -192,7 +192,6 @@ a {
 .logo-container a {
     display: flex;
     gap: 20px;
-    color: red;
 }
 
 .logo-icon {
@@ -268,6 +267,8 @@ a {
 .nav-link:hover {
     color: #64ffda;
 }
+
+.nav-menu .resumeBtn {color: red;}
 
 .hamburger {
     display: none;
