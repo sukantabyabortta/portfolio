@@ -190,7 +190,8 @@ a {
 }
 
 .logo-container a {
-    display: block;
+    display: flex;
+    gap: 20px;
 }
 
 .logo-icon {
