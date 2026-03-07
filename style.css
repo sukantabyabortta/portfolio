@@ -192,6 +192,7 @@ a {
 .logo-container a {
     display: flex;
     gap: 20px;
+    color: red;
 }
 
 .logo-icon {
