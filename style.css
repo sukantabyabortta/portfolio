@@ -344,7 +344,7 @@ a {
     color: #8892b0;
     font-size: 0.95rem;
     transition: color 0.3s;
-    font-weight: normal;
+    font-weight: 600;
 }
 
 .hero-contact a:hover {
