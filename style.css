@@ -157,14 +157,26 @@ img {
 
 /* ── Hero ── */
 .hero {
+    position: relative;
+    overflow: hidden;
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 100px 0 60px;
-    background: linear-gradient(135deg, var(--dark) 0%, var(--dark3) 100%);
+    background: radial-gradient(circle at top left, rgba(79, 195, 247, .12), transparent 24%), radial-gradient(circle at bottom right, rgba(100, 255, 218, .16), transparent 24%), linear-gradient(135deg, var(--dark) 0%, var(--dark3) 100%);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 75% 20%, rgba(255, 255, 255, .08), transparent 16%), radial-gradient(circle at 20% 80%, rgba(100, 255, 218, .08), transparent 12%);
+    pointer-events: none;
 }
 
 .hero-wrap {
+    position: relative;
+    z-index: 1;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
@@ -373,7 +385,8 @@ section {
 
 /* ── About ── */
 .about {
-    background: var(--dark2);
+    background: radial-gradient(circle at top left, rgba(79, 195, 247, .08), transparent 18%), linear-gradient(180deg, rgba(10, 10, 26, .98), rgba(17, 17, 40, .98));
+    border-top: 1px solid rgba(255, 255, 255, .04);
 }
 
 .about-grid {
@@ -508,7 +521,8 @@ section {
 
 /* ── Services ── */
 .services {
-    background: var(--dark);
+    background: radial-gradient(circle at top right, rgba(100, 255, 218, .08), transparent 18%), linear-gradient(180deg, rgba(10, 10, 26, .98), rgba(15, 15, 35, .98));
+    border-top: 1px solid rgba(255, 255, 255, .05);
 }
 
 .services-grid {
@@ -628,7 +642,7 @@ section {
 
 /* ── Skills ── */
 .skills {
-    background: var(--dark2);
+    background: radial-gradient(circle at 20% 10%, rgba(100, 255, 218, .06), transparent 16%), linear-gradient(180deg, rgba(10, 10, 26, .97), rgba(17, 17, 40, .97));
 }
 
 .skills-grid {
@@ -745,7 +759,8 @@ section {
 
 /* ── Portfolio ── */
 .portfolio {
-    background: var(--dark);
+    background: radial-gradient(circle at 30% 25%, rgba(79, 195, 247, .06), transparent 16%), linear-gradient(180deg, rgba(10, 10, 26, .98), rgba(14, 14, 34, .98));
+    border-top: 1px solid rgba(255, 255, 255, .04);
 }
 
 .gallery-row {
@@ -934,7 +949,8 @@ section {
 
 /* ── Contact ── */
 .contact {
-    background: var(--dark2);
+    background: radial-gradient(circle at 85% 10%, rgba(79, 195, 247, .08), transparent 15%), linear-gradient(180deg, rgba(10, 10, 26, .96), rgba(13, 13, 33, .98));
+    border-top: 1px solid rgba(255, 255, 255, .05);
 }
 
 .contact-grid {
